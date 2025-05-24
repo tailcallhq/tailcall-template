@@ -37,8 +37,7 @@ where
         match n.parse::<f64>() {
             Ok(num) => ValR::Ok(JsonLikeHelper(A::number_f64(num))),
             Err(err) => ValR::Err(jaq_core::Error::str(format!(
-                "Invalid number format: {}",
-                err
+                "Invalid number format: {err}"
             ))),
         }
     }

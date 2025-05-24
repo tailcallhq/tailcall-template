@@ -23,7 +23,7 @@ jaq-std  = { workspace = true }
 jaq-json = { workspace = true }
 
 [dev-dependencies]
-gh-workflow-tailcall = "0.2.0"
+gh-workflow = "0.4.1"
 pest = "2.7.14"
 pest_derive = {version = "2.7.14"}
 criterion = "0.5.1"
