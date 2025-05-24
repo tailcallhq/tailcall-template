@@ -31,7 +31,7 @@ fn parse_name(input: &str) -> IResult<&str, String> {
 
     nom::combinator::map(parser, |(_, a, b, _)| {
         let b: String = b.into_iter().collect();
-        format!("{}{}", a, b)
+        format!("{a}{b}")
     })
     .parse(input)
 }
