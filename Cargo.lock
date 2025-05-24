@@ -47,9 +47,9 @@ checksum = "71938f30533e4d95a6d17aa530939da3842c2ab6f4f84b9dae68447e4129f74a"
 
 [[package]]
 name = "async-graphql"
-version = "7.0.11"
+version = "7.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ba6d24703c5adc5ba9116901b92ee4e4c0643c01a56c4fd303f3818638d7449"
+checksum = "036618f842229ba0b89652ffe425f96c7c16a49f7e3cb23b56fca7f61fd74980"
 dependencies = [
  "async-graphql-derive",
  "async-graphql-parser",
@@ -68,7 +68,6 @@ dependencies = [
  "mime",
  "multer",
  "num-traits",
- "once_cell",
  "pin-project-lite",
  "regex",
  "serde",
@@ -81,9 +80,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-derive"
-version = "7.0.11"
+version = "7.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a94c2d176893486bd37cd1b6defadd999f7357bf5804e92f510c08bcf16c538f"
+checksum = "fd45deb3dbe5da5cdb8d6a670a7736d735ba65b455328440f236dfb113727a3d"
 dependencies = [
  "Inflector",
  "async-graphql-parser",
@@ -98,9 +97,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-parser"
-version = "7.0.11"
+version = "7.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79272bdbf26af97866e149f05b2b546edb5c00e51b5f916289931ed233e208ad"
+checksum = "60b7607e59424a35dadbc085b0d513aa54ec28160ee640cf79ec3b634eba66d3"
 dependencies = [
  "async-graphql-value",
  "pest",
@@ -110,9 +109,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-value"
-version = "7.0.11"
+version = "7.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ef5ec94176a12a8cbe985cd73f2e54dc9c702c88c766bdef12f1f3a67cedbee1"
+checksum = "34ecdaff7c9cffa3614a9f9999bf9ee4c3078fe3ce4d6a6e161736b56febf2de"
 dependencies = [
  "bytes",
  "indexmap",
@@ -580,42 +579,19 @@ dependencies = [
 
 [[package]]
 name = "gh-workflow"
-version = "0.5.6"
+version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ea61127f989ca4a152b22b48bb712e012a332f5720ebffb79d36b5f17d21db4"
+checksum = "ae1ad3bcceabc26816ce586fece0653c5253300dcfa66c0a62efed1ccb5f745d"
 dependencies = [
  "async-trait",
  "derive_more",
  "derive_setters",
- "gh-workflow-macros",
  "indexmap",
  "merge",
  "serde",
  "serde_json",
  "serde_yaml",
  "strum_macros",
-]
-
-[[package]]
-name = "gh-workflow-macros"
-version = "0.5.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3415ff89464a801cd240df6035bbd203960cdb6618f7de68c9e38eeadd8a0cf6"
-dependencies = [
- "heck",
- "quote",
- "syn 2.0.87",
-]
-
-[[package]]
-name = "gh-workflow-tailcall"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42f01a60e065d545d613b0ac1a22f8310308d608354bcafa81cb53a2f5746869"
-dependencies = [
- "derive_setters",
- "gh-workflow",
- "heck",
 ]
 
 [[package]]
@@ -772,7 +748,7 @@ name = "jq"
 version = "0.1.0"
 dependencies = [
  "criterion",
- "gh-workflow-tailcall",
+ "gh-workflow",
  "jaq-core",
  "jaq-json",
  "jaq-std",
