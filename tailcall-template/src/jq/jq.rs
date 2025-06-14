@@ -37,8 +37,7 @@ where
         match n.parse::<f64>() {
             Ok(num) => ValR::Ok(JsonLikeHelper(A::number_f64(num))),
             Err(err) => ValR::Err(jaq_core::Error::str(format!(
-                "Invalid number format: {}",
-                err
+                "Invalid number format: {err}"
             ))),
         }
     }
@@ -182,9 +181,9 @@ where
             let obj = A::obj(iter.collect::<Result<Vec<_>, jaq_core::Exn<_>>>()?);
             Ok(JsonLikeHelper(obj))
         } else {
-            return opt.fail(self, |_v| {
+            opt.fail(self, |_v| {
                 jaq_core::Exn::from(jaq_core::Error::str("Value is not object or array"))
-            });
+            })
         }
     }
 
@@ -239,9 +238,9 @@ where
             }
             Ok(self)
         } else {
-            return opt.fail(self, |_v| {
+            opt.fail(self, |_v| {
                 jaq_core::Exn::from(jaq_core::Error::str("Value is not object or array"))
-            });
+            })
         }
     }
 
