@@ -67,6 +67,6 @@ impl Display for Mustache {
             .collect::<Vec<String>>()
             .join("");
 
-        write!(f, "{}", str)
+        write!(f, "{str}")
     }
 }
