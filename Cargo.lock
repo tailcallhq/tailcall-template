@@ -391,18 +391,18 @@ dependencies = [
 
 [[package]]
 name = "derive_more"
-version = "1.0.0"
+version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a9b99b9cbbe49445b21764dc0625032a89b145a2642e67603e1c936f5458d05"
+checksum = "093242cf7570c207c83073cf82f79706fe7b8317e98620a47d5be7c3d8497678"
 dependencies = [
  "derive_more-impl",
 ]
 
 [[package]]
 name = "derive_more-impl"
-version = "1.0.0"
+version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb7330aeadfbe296029522e6c40f315320aba36fc43a5b3632f3795348f3bd22"
+checksum = "bda628edc44c4bb645fbe0f758797143e4e07926f7ebf4e9bdfbd3d2ce621df3"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -580,9 +580,9 @@ dependencies = [
 
 [[package]]
 name = "gh-workflow"
-version = "0.5.6"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ea61127f989ca4a152b22b48bb712e012a332f5720ebffb79d36b5f17d21db4"
+checksum = "d3f151d05aed873a8e507af24255923c1c7a5233040e7757ea6bb0f3930893ee"
 dependencies = [
  "async-trait",
  "derive_more",
@@ -593,14 +593,14 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_yaml",
- "strum_macros",
+ "strum_macros 0.27.2",
 ]
 
 [[package]]
 name = "gh-workflow-macros"
-version = "0.5.6"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3415ff89464a801cd240df6035bbd203960cdb6618f7de68c9e38eeadd8a0cf6"
+checksum = "c700d433184ad5a1547ab7e619704a6aa15e2428bdb0dfe78e18aa893f17e2b9"
 dependencies = [
  "heck",
  "quote",
@@ -609,9 +609,9 @@ dependencies = [
 
 [[package]]
 name = "gh-workflow-tailcall"
-version = "0.2.0"
+version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42f01a60e065d545d613b0ac1a22f8310308d608354bcafa81cb53a2f5746869"
+checksum = "f8272d31527fd5a14ed20c4288dd615fedda223bafb88598763d95ea25bb324e"
 dependencies = [
  "derive_setters",
  "gh-workflow",
@@ -1255,7 +1255,7 @@ version = "0.26.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8fec0f0aef304996cf250b31b5a10dee7980c85da9d759361292b8bca5a18f06"
 dependencies = [
- "strum_macros",
+ "strum_macros 0.26.4",
 ]
 
 [[package]]
@@ -1268,6 +1268,18 @@ dependencies = [
  "proc-macro2",
  "quote",
  "rustversion",
+ "syn 2.0.87",
+]
+
+[[package]]
+name = "strum_macros"
+version = "0.27.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7695ce3845ea4b33927c055a39dc438a45b059f7c1b3d91d38d10355fb8cbca7"
+dependencies = [
+ "heck",
+ "proc-macro2",
+ "quote",
  "syn 2.0.87",
 ]
 
