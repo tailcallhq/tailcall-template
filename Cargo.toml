@@ -26,7 +26,7 @@ jaq-json = { workspace = true }
 gh-workflow-tailcall = "0.2.0"
 pest = "2.7.14"
 pest_derive = {version = "2.7.14"}
-criterion = "0.5.1"
+criterion = "0.8.0"
 serde_json = { workspace = true }
 nom = { workspace = true }
 
